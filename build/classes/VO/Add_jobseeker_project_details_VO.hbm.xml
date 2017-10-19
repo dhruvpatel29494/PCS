@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 24, 2015 10:12:29 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="VO.Add_jobseeker_project_details_VO" table="ADD_JOBSEEKER_PROJECT_DETAILS_VO">
+        <id name="project_details_id" type="int">
+            <column name="PROJECT_DETAILS_ID" />
+            <generator class="increment" />
+        </id>
+        <many-to-one name="user_id" class="VO.Add_user_VO" fetch="join">
+            <column name="USER_ID" />
+        </many-to-one>
+        <property name="company_name" type="java.lang.String">
+            <column name="COMPANY_NAME" />
+        </property>
+        <property name="project_title" type="java.lang.String">
+            <column name="PROJECT_TITLE" />
+        </property>
+        <property name="working_period" type="java.lang.String">
+            <column name="WORKING_PERIOD" />
+        </property>
+        <property name="project_type" type="java.lang.String">
+            <column name="PROJECT_TYPE" />
+        </property>
+        <property name="project_summary" type="java.lang.String">
+            <column name="PROJECT_SUMMARY" />
+        </property>
+        <property name="position" type="java.lang.String">
+            <column name="POSITION" />
+        </property>
+        <property name="role_details" type="java.lang.String">
+            <column name="ROLE_DETAILS" />
+        </property>
+        <property name="time_size" type="int">
+            <column name="TIME_SIZE" />
+        </property>
+        <property name="skills" type="java.lang.String">
+            <column name="SKILLS" />
+        </property>
+    </class>
+</hibernate-mapping>

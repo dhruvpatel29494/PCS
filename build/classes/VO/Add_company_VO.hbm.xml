@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 20, 2015 12:57:35 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="VO.Add_company_VO" table="ADD_COMPANY_VO">
+        <id name="company_id" type="int">
+            <column name="COMPANY_ID" />
+            <generator class="increment" />
+        </id>
+        <property name="company_name" type="java.lang.String">
+            <column name="COMPANY_NAME" />
+        </property>
+        <property name="company_URL" type="java.lang.String">
+            <column name="COMPANY_URL" />
+        </property>
+        <property name="company_facebook_URL" type="java.lang.String">
+            <column name="COMPANY_FACEBOOK_URL" />
+        </property>
+        <property name="company_twitter_URL" type="java.lang.String">
+            <column name="COMPANY_TWITTER_URL" />
+        </property>
+        <property name="company_google_plus_URL" type="java.lang.String">
+            <column name="COMPANY_GOOGLE_PLUS_URL" />
+        </property>
+        <property name="company_profile" type="java.lang.String">
+            <column name="COMPANY_PROFILE" />
+        </property>
+        <property name="company_portfolio" type="java.lang.String">
+            <column name="COMPANY_PORTFOLIO" />
+        </property>
+        <property name="company_headline" type="java.lang.String">
+            <column name="COMPANY_HEADLINE" />
+        </property>
+        <property name="company_expertises" type="java.lang.String">
+            <column name="COMPANY_EXPERTISES" />
+        </property>
+        <property name="company_address" type="java.lang.String">
+            <column name="COMPANY_ADDRESS" />
+        </property>
+        <property name="company_email" type="java.lang.String">
+            <column name="COMPANY_EMAIL" />
+        </property>
+        <property name="company_contact_no" type="java.lang.Long">
+            <column name="COMPANY_CONTACT_NO" />
+        </property>
+        <property name="company_logo_path" type="java.lang.String">
+            <column name="COMPANY_LOGO_PATH" />
+        </property>
+        <many-to-one name="user_id" class="VO.Add_user_VO" fetch="join">
+            <column name="USER_ID" />
+        </many-to-one>
+        <many-to-one name="city_id" class="VO.Add_city_VO" fetch="join">
+            <column name="CITY_ID" />
+        </many-to-one>
+        <many-to-one name="state_id" class="VO.Add_state_VO" fetch="join">
+            <column name="STATE_ID" />
+        </many-to-one>
+        <many-to-one name="country_id" class="VO.Add_country_VO" fetch="join">
+            <column name="COUNTRY_ID" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

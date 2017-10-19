@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 24, 2015 4:29:20 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="VO.Add_jobseeker_experience_details_VO" table="ADD_JOBSEEKER_EXPERIENCE_DETAILS_VO">
+        <id name="experience_details_id" type="int">
+            <column name="EXPERIENCE_DETAILS_ID" />
+            <generator class="increment" />
+        </id>
+        <property name="company_name" type="java.lang.String">
+            <column name="COMPANY_NAME" />
+        </property>
+        <property name="position" type="java.lang.String">
+            <column name="POSITION" />
+        </property>
+        <property name="job_profile" type="java.lang.String">
+            <column name="JOB_PROFILE" />
+        </property>
+        <property name="experience" type="int">
+            <column name="EXPERIENCE" />
+        </property>
+        <property name="annual_CTC" type="java.lang.Long">
+            <column name="ANNUAL_CTC" />
+        </property>
+        <many-to-one name="user_id" class="VO.Add_user_VO" fetch="join">
+            <column name="USER_ID" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

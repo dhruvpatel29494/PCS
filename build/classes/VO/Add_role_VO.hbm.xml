@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 2, 2015 4:46:40 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="VO.Add_role_VO" table="ADD_ROLE_VO">
+        <id name="role_id" type="int">
+            <column name="ROLE_ID" />
+            <generator class="increment" />
+        </id>
+        <property name="role_name" type="java.lang.String">
+            <column name="ROLE_NAME" />
+        </property>
+        <property name="role_description" type="java.lang.String">
+            <column name="ROLE_DESCRIPTION" />
+        </property>
+        <many-to-one name="category_id" class="VO.Add_category_VO" >
+            <column name="CATEGORY_ID" />
+        </many-to-one>
+        <many-to-one name="subcategory_id" class="VO.Add_subcategory_VO" >
+            <column name="SUBCATEGORY_ID" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

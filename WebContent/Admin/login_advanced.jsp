@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+<title>Londinium - premium responsive admin template by Eugene Kopyov</title>
+
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="css/londinium-theme.css" rel="stylesheet" type="text/css">
+<link href="css/styles.css" rel="stylesheet" type="text/css">
+<link href="css/icons.css" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&amp;subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+
+<script type="text/javascript" src="js/sparkline.min.js"></script>
+
+<script type="text/javascript" src="js/uniform.min.js"></script>
+<script type="text/javascript" src="js/select2.min.js"></script>
+<script type="text/javascript" src="js/inputmask.js"></script>
+<script type="text/javascript" src="js/autosize.js"></script>
+<script type="text/javascript" src="js/inputlimit.min.js"></script>
+<script type="text/javascript" src="js/listbox.js"></script>
+<script type="text/javascript" src="js/multiselect.js"></script>
+<script type="text/javascript" src="js/validate.min.js"></script>
+<script type="text/javascript" src="js/tags.min.js"></script>
+<script type="text/javascript" src="js/switch.min.js"></script>
+
+<script type="text/javascript" src="js/plupload.full.min.js"></script>
+<script type="text/javascript" src="js/plupload.queue.min.js"></script>
+
+<script type="text/javascript" src="js/wysihtml5.min.js"></script>
+<script type="text/javascript" src="js/toolbar.js"></script>
+
+<script type="text/javascript" src="js/daterangepicker.js"></script>
+<script type="text/javascript" src="js/fancybox.min.js"></script>
+<script type="text/javascript" src="js/moment.js"></script>
+<script type="text/javascript" src="js/jgrowl.min.js"></script>
+<script type="text/javascript" src="js/datatables.min.js"></script>
+<script type="text/javascript" src="js/colorpicker.js"></script>
+<script type="text/javascript" src="js/fullcalendar.min.js"></script>
+<script type="text/javascript" src="js/timepicker.min.js"></script>
+
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/application.js"></script>
+
+</head>
+
+<body class="full-width page-condensed">
+
+	<!-- Navbar -->
+	<div class="navbar navbar-inverse" role="navigation">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-right">
+				<span class="sr-only">Toggle navbar</span>
+				<i class="icon-grid3"></i>
+			</button>
+			<a class="navbar-brand" href="#"><img src="images/logo.png" alt="Londinium"></a>
+		</div>
+
+		<ul class="nav navbar-nav navbar-right collapse">
+			<li><a href="#"><i class="icon-screen2"></i></a></li>
+			<li><a href="#"><i class="icon-paragraph-justify2"></i></a></li>
+			<li>
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-cogs"></i></a>
+                <ul class="dropdown-menu icons-right dropdown-menu-right">
+					<li><a href="#"><i class="icon-cogs"></i> This is</a></li>
+					<li><a href="#"><i class="icon-grid3"></i> Dropdown</a></li>
+					<li><a href="#"><i class="icon-spinner7"></i> With right</a></li>
+					<li><a href="#"><i class="icon-link"></i> Aligned icons</a></li>
+                </ul>
+			</li>
+		</ul>
+	</div>
+	<!-- /navbar -->
+
+
+	<!-- Login wrapper -->
+	<div class="login-wrapper">
+    	<form action="#" role="form">
+			<div class="well">
+			    <div class="thumbnail">
+			    	<div class="thumb">
+						<img alt="" src="images/face3.png">
+						<div class="thumb-options">
+							<span>
+								<a href="#" class="btn btn-icon btn-success btn-xs"><i class="icon-pencil"></i></a>
+								<a href="#" class="btn btn-icon btn-success btn-xs"><i class="icon-info"></i></a>
+							</span>
+						</div>
+				    </div>
+			    
+			    	<div class="caption text-center">
+			    		<h6>Madison Gartner <small>Front end developer</small></h6>
+			    	</div>
+		    	</div>
+
+				<div class="form-group has-feedback has-feedback-no-label">
+					<input type="password" class="form-control" placeholder="Password">
+					<i class="icon-lock form-control-feedback"></i>
+				</div>
+
+				<div class="row form-actions">
+					<div class="col-xs-6">
+						<div class="checkbox checkbox-success">
+						<label>
+							<input type="checkbox" class="styled">
+							Remember me
+						</label>
+						</div>
+					</div>
+
+					<div class="col-xs-6">
+						<button type="submit" class="btn btn-danger pull-right"><i class="icon-menu2"></i> Sign in</button>
+					</div>
+				</div>
+			</div>
+    	</form>
+	</div>  
+	<!-- /login wrapper -->
+
+
+    <!-- Footer -->
+    <div class="footer clearfix">
+        <div class="pull-left">&copy; 2013. Londinium Admin Template by <a href="http://themeforest.net/user/Kopyov">Eugene Kopyov</a></div>
+    	<div class="pull-right icons-group">
+    		<a href="#"><i class="icon-screen2"></i></a>
+    		<a href="#"><i class="icon-balance"></i></a>
+    		<a href="#"><i class="icon-cog3"></i></a>
+    	</div>
+    </div>
+    <!-- /footer -->
+
+
+</body>
+</html>

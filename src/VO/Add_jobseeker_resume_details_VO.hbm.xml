@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 24, 2015 3:47:51 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="VO.Add_jobseeker_resume_details_VO" table="ADD_JOBSEEKER_RESUME_DETAILS_VO">
+        <id name="resume_details_id" type="int">
+            <column name="RESUME_DETAILS_ID" />
+            <generator class="increment" />
+        </id>
+        <many-to-one name="user_id" class="VO.Add_user_VO" fetch="join">
+            <column name="USER_ID" />
+        </many-to-one>
+        <property name="resume_title" type="java.lang.String">
+            <column name="RESUME_TITLE" />
+        </property>
+        <property name="resume_file_path" type="java.lang.String">
+            <column name="RESUME_FILE_PATH" />
+        </property>
+    </class>
+</hibernate-mapping>

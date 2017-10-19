@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 29, 2015 4:23:38 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="VO.Add_university_for_PG" table="ADD_UNIVERSITY_FOR_PG">
+        <id name="university_for_PG_id" type="int">
+            <column name="UNIVERSITY_FOR_PG_ID" />
+            <generator class="increment" />
+        </id>
+        <property name="university_for_PG_name" type="java.lang.String">
+            <column name="UNIVERSITY_FOR_PG_NAME" />
+        </property>
+        <property name="university_for_PG_description" type="java.lang.String">
+            <column name="UNIVERSITY_FOR_PG_DESCRIPTION" />
+        </property>
+        <many-to-one name="add_PG_field_specification_VO" class="VO.Add_PG_field_specification_VO" >
+            <column name="PG_FIELD_SPECIFICATION_ID" />
+        </many-to-one>
+        <many-to-one name="add_specialize_course_for_PG_VO" class="VO.Add_specialize_course_for_PG_VO" >
+            <column name="SPECIALIZE_COURSE_FOR_PG_ID" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

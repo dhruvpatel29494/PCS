@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 2, 2015 4:46:40 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="VO.Add_PHD_field_specification_VO" table="ADD_PHD_FIELD_SPECIFICATION_VO">
+        <id name="PHD_field_specification_id" type="int">
+            <column name="PHD_FIELD_SPECIFICATION_ID" />
+            <generator class="increment" />
+        </id>
+        <property name="PHD_field_specification_name" type="java.lang.String">
+            <column name="PHD_FIELD_SPECIFICATION_NAME" />
+        </property>
+        <property name="PHD_field_specification_description" type="java.lang.String">
+            <column name="PHD_FIELD_SPECIFICATION_DESCRIPTION" />
+        </property>
+    </class>
+</hibernate-mapping>

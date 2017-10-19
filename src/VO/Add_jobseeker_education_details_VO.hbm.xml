@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 24, 2015 4:28:48 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="VO.Add_jobseeker_education_details_VO" table="ADD_JOBSEEKER_EDUCATION_DETAILS_VO">
+        <id name="education_details_id" type="int">
+            <column name="EDUCATION_DETAILS_ID" />
+            <generator class="increment" />
+        </id>
+        <many-to-one name="user_id" class="VO.Add_user_VO" fetch="join">
+            <column name="USER_ID" />
+        </many-to-one>
+        <many-to-one name="UG_field_specification_id" class="VO.Add_UG_field_specification_VO" fetch="join">
+            <column name="UG_FIELD_SPECIFICATION_ID" />
+        </many-to-one>
+        <many-to-one name="specialize_course_for_UG_id" class="VO.Add_specialize_course_for_UG_VO" fetch="join">
+            <column name="SPECIALIZE_COURSE_FOR_UG_ID" />
+        </many-to-one>
+        <many-to-one name="university_for_UG_id" class="VO.Add_university_for_UG" fetch="join">
+            <column name="UNIVERSITY_FOR_UG_ID" />
+        </many-to-one>
+        <property name="UG_passing_year" type="int">
+            <column name="UG_PASSING_YEAR" />
+        </property>
+        <property name="UG_type" type="java.lang.String">
+            <column name="UG_TYPE" />
+        </property>
+        <many-to-one name="PG_field_specification_id" class="VO.Add_PG_field_specification_VO" fetch="join">
+            <column name="PG_FIELD_SPECIFICATION_ID" />
+        </many-to-one>
+        <many-to-one name="specialize_course_for_PG_id" class="VO.Add_specialize_course_for_PG_VO" fetch="join">
+            <column name="SPECIALIZE_COURSE_FOR_PG_ID" />
+        </many-to-one>
+        <many-to-one name="university_for_PG_id" class="VO.Add_university_for_PG" fetch="join">
+            <column name="UNIVERSITY_FOR_PG_ID" />
+        </many-to-one>
+        <property name="PG_passing_year" type="int">
+            <column name="PG_PASSING_YEAR" />
+        </property>
+        <property name="PG_type" type="java.lang.String">
+            <column name="PG_TYPE" />
+        </property>
+        <many-to-one name="PHD_field_specification_id" class="VO.Add_PHD_field_specification_VO" fetch="join">
+            <column name="PHD_FIELD_SPECIFICATION_ID" />
+        </many-to-one>
+        <many-to-one name="specialize_course_for_PHD_id" class="VO.Add_specialize_course_for_PHD_VO" fetch="join">
+            <column name="SPECIALIZE_COURSE_FOR_PHD_ID" />
+        </many-to-one>
+        <many-to-one name="university_for_PHD_id" class="VO.Add_university_for_PHD" fetch="join">
+            <column name="UNIVERSITY_FOR_PHD_ID" />
+        </many-to-one>
+        <property name="PHD_passing_year" type="int">
+            <column name="PHD_PASSING_YEAR" />
+        </property>
+        <property name="PHD_type" type="java.lang.String">
+            <column name="PHD_TYPE" />
+        </property>
+    </class>
+</hibernate-mapping>

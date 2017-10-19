@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+<session-factory>
+  <property name="hibernate.connection.driver_class"> com.mysql.jdbc.Driver</property>
+  <property name="hibernate.connection.url">jdbc:mysql://localhost/PCS</property>
+  <property name="hibernate.connection.username">root</property>
+  <property name="hibernate.connection.password">root</property>
+  <property name="hibernate.connection.pool_size">10</property>
+  <property name="show_sql">true</property>
+  <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+  <property name="hibernate.hbm2ddl.auto">update</property>
+  <!-- Mapping files -->
+
+    <mapping resource="VO/Add_country_VO.hbm.xml"/>
+ 	<mapping resource="VO/Add_PHD_field_specification_VO.hbm.xml"/>
+	<mapping resource="VO/Add_PG_field_specification_VO.hbm.xml"/>
+	<mapping resource="VO/Add_UG_field_specification_VO.hbm.xml"/>
+	<mapping resource="VO/Add_skill_VO.hbm.xml"/>
+	<mapping resource="VO/Add_category_VO.hbm.xml"/>
+	<mapping resource="VO/Add_state_VO.hbm.xml"/>
+	<mapping resource="VO/Add_city_VO.hbm.xml"/>
+	<mapping resource="VO/Add_subcategory_VO.hbm.xml"/>
+	<mapping resource="VO/Add_role_VO.hbm.xml"/>
+	<mapping resource="VO/Add_specialize_course_for_UG_VO.hbm.xml"/>
+	<mapping resource="VO/Add_specialize_course_for_PG_VO.hbm.xml"/>
+	<mapping resource="VO/Add_specialize_course_for_PHD_VO.hbm.xml"/>
+	<mapping resource="VO/Add_university_for_UG.hbm.xml"/>
+	<mapping resource="VO/Add_university_for_PG.hbm.xml"/>
+	<mapping resource="VO/Add_university_for_PHD.hbm.xml"/>
+	<mapping resource="VO/Add_company_VO.hbm.xml"/>
+	<mapping resource="VO/Add_job_VO.hbm.xml"/>
+	<mapping resource="VO/Add_user_VO.hbm.xml"/>
+	<mapping resource="VO/Add_jobseeker_basic_details_VO.hbm.xml"/>
+	<mapping resource="VO/Add_jobseeker_education_details_VO.hbm.xml"/>
+	<mapping resource="VO/Add_jobseeker_experience_details_VO.hbm.xml"/>
+	<mapping resource="VO/Add_jobseeker_resume_details_VO.hbm.xml"/>
+	<mapping resource="VO/Add_jobseeker_project_details_VO.hbm.xml"/>
+	<mapping resource="VO/Add_physically_challenge_VO.hbm.xml"/>
+	<mapping resource="VO/Add_jobseeker_other_details_VO.hbm.xml"/>
+	<mapping resource="VO/Add_apply_VO.hbm.xml"/>
+	<mapping resource="VO/Add_jobseeker_VO.hbm.xml"/>
+	
+	
+</session-factory>
+</hibernate-configuration>

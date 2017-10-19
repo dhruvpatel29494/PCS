@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 25, 2015 12:43:12 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="VO.Add_physically_challenge_VO" table="ADD_PHYSICALLY_CHALLENGE_VO">
+        <id name="physically_challenge_id" type="int">
+            <column name="PHYSICALLY_CHALLENGE_ID" />
+            <generator class="increment" />
+        </id>
+        <property name="physically_challenge_name" type="java.lang.String">
+            <column name="PHYSICALLY_CHALLENGE_NAME" />
+        </property>
+        <property name="physically_challenge_description" type="java.lang.String">
+            <column name="PHYSICALLY_CHALLENGE_DESCRIPTION" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 24, 2015 4:28:16 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="VO.Add_jobseeker_basic_details_VO" table="ADD_JOBSEEKER_BASIC_DETAILS_VO">
+        <id name="basic_details_id" type="int">
+            <column name="BASIC_DETAILS_ID" />
+            <generator class="increment" />
+        </id>
+        <property name="first_name" type="java.lang.String">
+            <column name="FIRST_NAME" />
+        </property>
+        <property name="last_name" type="java.lang.String">
+            <column name="LAST_NAME" />
+        </property>
+        <property name="gender" type="java.lang.String">
+            <column name="GENDER" />
+        </property>
+        <property name="meritalstatus" type="java.lang.String">
+            <column name="MERITALSTATUS" />
+        </property>
+        <property name="date_of_birth" type="java.lang.String">
+            <column name="DATE_OF_BIRTH" />
+        </property>
+        <property name="address" type="java.lang.String">
+            <column name="ADDRESS" />
+        </property>
+        <property name="key_skills" type="java.lang.String">
+            <column name="KEY_SKILLS" />
+        </property>
+        <property name="profile_pic" type="java.lang.String">
+            <column name="PROFILE_PIC" />
+        </property>
+        <many-to-one name="user_id" class="VO.Add_user_VO" fetch="join">
+            <column name="USER_ID" />
+        </many-to-one>
+        <many-to-one name="city_id" class="VO.Add_city_VO" fetch="join">
+            <column name="CITY_ID" />
+        </many-to-one>
+        <many-to-one name="state_id" class="VO.Add_state_VO" fetch="join">
+            <column name="STATE_ID" />
+        </many-to-one>
+        <many-to-one name="country_id" class="VO.Add_country_VO" fetch="join">
+            <column name="COUNTRY_ID" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

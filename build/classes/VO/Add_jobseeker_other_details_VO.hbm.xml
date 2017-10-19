@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 27, 2015 2:07:12 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="VO.Add_jobseeker_other_details_VO" table="ADD_JOBSEEKER_OTHER_DETAILS_VO">
+        <id name="other_details_id" type="int">
+            <column name="OTHER_DETAILS_ID" />
+            <generator class="increment" />
+        </id>
+        <many-to-one name="user_id" class="VO.Add_user_VO" fetch="join">
+            <column name="USER_ID" />
+        </many-to-one>
+        <property name="language0" type="java.lang.String">
+            <column name="LANGUAGE0" />
+        </property>
+        <property name="speak0" type="java.lang.String">
+            <column name="SPEAK0" />
+        </property>
+        <property name="read0" type="java.lang.String">
+            <column name="READ0" />
+        </property>
+        <property name="write0" type="java.lang.String">
+            <column name="WRITE0" />
+        </property>
+        <property name="language1" type="java.lang.String">
+            <column name="LANGUAGE1" />
+        </property>
+        <property name="speak1" type="java.lang.String">
+            <column name="SPEAK1" />
+        </property>
+        <property name="read1" type="java.lang.String">
+            <column name="READ1" />
+        </property>
+        <property name="write1" type="java.lang.String">
+            <column name="WRITE1" />
+        </property>
+        <property name="language2" type="java.lang.String">
+            <column name="LANGUAGE2" />
+        </property>
+        <property name="speak2" type="java.lang.String">
+            <column name="SPEAK2" />
+        </property>
+        <property name="read2" type="java.lang.String">
+            <column name="READ2" />
+        </property>
+        <property name="write2" type="java.lang.String">
+            <column name="WRITE2" />
+        </property>
+        <property name="language3" type="java.lang.String">
+            <column name="LANGUAGE3" />
+        </property>
+        <property name="speak3" type="java.lang.String">
+            <column name="SPEAK3" />
+        </property>
+        <property name="read3" type="java.lang.String">
+            <column name="READ3" />
+        </property>
+        <property name="write3" type="java.lang.String">
+            <column name="WRITE3" />
+        </property>
+        <property name="language4" type="java.lang.String">
+            <column name="LANGUAGE4" />
+        </property>
+        <property name="speak4" type="java.lang.String">
+            <column name="SPEAK4" />
+        </property>
+        <property name="read4" type="java.lang.String">
+            <column name="READ4" />
+        </property>
+        <property name="write4" type="java.lang.String">
+            <column name="WRITE4" />
+        </property>
+        
+        
+        
+        <property name="mother_tounge" type="java.lang.String">
+            <column name="MOTHER_TOUNGE" />
+        </property>
+        <property name="job_type" type="java.lang.String">
+            <column name="JOB_TYPE" />
+        </property>
+        <property name="physically_challenged" type="java.lang.String">
+            <column name="PHYSICALLY_CHALLENGED" />
+        </property>
+        <many-to-one name="category_id" class="VO.Add_category_VO" fetch="join">
+            <column name="CATEGORY_ID" />
+        </many-to-one>
+        <property name="category_description" type="java.lang.String">
+            <column name="CATEGORY_DESCRIPTION" />
+        </property>
+        
+    </class>
+</hibernate-mapping>

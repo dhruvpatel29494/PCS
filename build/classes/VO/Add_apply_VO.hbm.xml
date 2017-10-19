@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 22, 2015 10:22:58 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="VO.Add_apply_VO" table="ADD_APPLY_VO">
+        <id name="apply_id" type="int">
+            <column name="APPLY_ID" />
+            <generator class="increment" />
+        </id>
+        <property name="approval_status" type="java.lang.String">
+            <column name="APPROVAL_STATUS" />
+        </property>
+        <many-to-one name="job_id" class="VO.Add_job_VO" fetch="join">
+            <column name="JOB_ID" />
+        </many-to-one>
+        <many-to-one name="company_id" class="VO.Add_company_VO" fetch="join">
+            <column name="COMPANY_ID" />
+        </many-to-one>
+        <many-to-one name="user_id" class="VO.Add_user_VO" fetch="join">
+            <column name="USER_ID" />
+        </many-to-one>
+        <many-to-one name="jobseeker_id" class="VO.Add_jobseeker_VO" fetch="join">
+            <column name="JOBSEEKER_ID" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 2, 2015 4:46:40 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="VO.Add_subcategory_VO" table="ADD_SUBCATEGORY_VO">
+        <id name="subcategory_id" type="int">
+            <column name="SUBCATEGORY_ID" />
+            <generator class="increment" />
+        </id>
+        <property name="subcategory_name" type="java.lang.String">
+            <column name="SUBCATEGORY_NAME" />
+        </property>
+        <property name="subcategory_description" type="java.lang.String">
+            <column name="SUBCATEGORY_DESCRIPTION" />
+        </property>
+        <many-to-one name="category_id" class="VO.Add_category_VO" >
+            <column name="CATEGORY_ID" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

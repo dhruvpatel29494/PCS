@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 20, 2015 5:02:22 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="VO.Add_job_VO" table="ADD_JOB_VO">
+        <id name="job_id" type="int">
+            <column name="JOB_ID" />
+            <generator class="increment" />
+        </id>
+        <property name="job_title" type="java.lang.String">
+            <column name="JOB_TITLE" />
+        </property>
+        <property name="job_type" type="java.lang.String">
+            <column name="JOB_TYPE" />
+        </property>
+        <property name="work_experience" type="int">
+            <column name="WORK_EXPERIENCE" />
+        </property>
+        <property name="annual_CTC" type="java.lang.Long">
+            <column name="ANNUAL_CTC" />
+        </property>
+        <property name="number_of_vacancies" type="int">
+            <column name="NUMBER_OF_VACANCIES" />
+        </property>
+        <property name="job_summary" type="java.lang.String">
+            <column name="JOB_SUMMARY" />
+        </property>
+        <property name="job_description" type="java.lang.String">
+            <column name="JOB_DESCRIPTION" />
+        </property>
+        <property name="job_status" type="java.lang.String">
+            <column name="JOB_STATUS" />
+        </property>
+        <property name="describe_candidate_profile" type="java.lang.String">
+            <column name="DESCRIBE_CANDIDATE_PROFILE" />
+        </property>
+        <property name="contact_person" type="java.lang.String">
+            <column name="CONTACT_PERSON" />
+        </property>
+        <property name="contact_no" type="java.lang.Long">
+            <column name="CONTACT_NO" />
+        </property>
+        <property name="company_Email" type="java.lang.String">
+            <column name="COMPANY_EMAIL" />
+        </property>
+        <many-to-one name="user_id" class="VO.Add_user_VO" fetch="join">
+            <column name="USER_ID" />
+        </many-to-one>
+        <many-to-one name="company_id" class="VO.Add_company_VO" fetch="join">
+            <column name="COMPANY_ID" />
+        </many-to-one>
+        <many-to-one name="category_id" class="VO.Add_category_VO" fetch="join">
+            <column name="CATEGORY_ID" />
+        </many-to-one>
+        <many-to-one name="subcategory_id" class="VO.Add_subcategory_VO" fetch="join">
+            <column name="SUBCATEGORY_ID" />
+        </many-to-one>
+        <many-to-one name="role_id" class="VO.Add_role_VO" fetch="join">
+            <column name="ROLE_ID" />
+        </many-to-one>
+        <many-to-one name="city_id" class="VO.Add_city_VO" fetch="join">
+            <column name="CITY_ID" />
+        </many-to-one>
+        <many-to-one name="state_id" class="VO.Add_state_VO" fetch="join">
+            <column name="STATE_ID" />
+        </many-to-one>
+        <many-to-one name="country_id" class="VO.Add_country_VO" fetch="join">
+            <column name="COUNTRY_ID" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>
